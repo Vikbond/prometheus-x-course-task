@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Books | JS Band Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>JS BAND STORE / Your full name</h1>
+      <nav class="user-nav" aria-label="User navigation">
+        <button type="button" class="cart-button" aria-label="Shopping cart">
+          <img src="assets/cart.svg" alt="" width="36" height="36">
+        </button>
+        <button type="button" class="sign-out-button">Sign-Out</button>
+        <img class="avatar" src="assets/avatar.png" alt="User avatar" width="50" height="50">
+        <span class="username">TestUser</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalog-controls" aria-label="Book search and sorting">
+        <label class="search-field">
+          <span class="visually-hidden">Search by book name</span>
+          <input id="book-search" type="search" placeholder="Search by book name">
+          <span class="search-icon" aria-hidden="true"></span>
+        </label>
+        <label class="sort-field">
+          <span class="visually-hidden">Sort books by price</span>
+          <select id="price-sort">
+            <option value="">Price</option>
+            <option value="ascending">Price: low to high</option>
+            <option value="descending">Price: high to low</option>
+          </select>
+        </label>
+      </section>
+
+      <p id="catalog-status" class="catalog-status" role="status" aria-live="polite">Loading books…</p>
+      <section id="book-grid" class="book-grid" aria-label="Books"></section>
+    </main>
+  </body>
+</html>
