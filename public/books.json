@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "author": "Adam D. Scott",
+    "price": 52.72,
+    "amount": 42,
+    "image": "javascript_everywhere.jpg",
+    "title": "JavaScript Everywhere",
+    "shortDescription": "Building cross-platform applications with GraphQL, React, React Native, and Electron.",
+    "description": "A book providing an introduction to JavaScript applications across web, mobile, and desktop platforms."
+  }
+]
