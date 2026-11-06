@@ -1,0 +1,12 @@
+@import url("../standalone.css");
+
+#catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.book-card { display: flex; min-width: 0; }
+.card-link { display: flex; flex: 1; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid #cccfc2; border-radius: 12px; color: inherit; background: #fffdf8; text-decoration: none; }
+.card-link:hover { border-color: #245a46; }
+.book-card img { width: 100%; height: 200px; object-fit: contain; background: #ebece2; border-radius: 6px; }
+.book-card h2 { font-size: 1.12rem; margin-bottom: 4px; overflow-wrap: anywhere; }
+.book-card p { margin-top: 0; }
+.card-actions { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+@media (max-width: 760px) { #catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { #catalog { grid-template-columns: 1fr; } }

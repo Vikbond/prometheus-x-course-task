@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Окрема книга | Курсовий проєкт</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="store-header">
+      Курсовий проєкт
+      <a href="../cart/"><img src="../cart.svg" alt="" width="24" height="24">Кошик</a>
+    </header>
+    <main>
+      <p><a href="../book-list/">До списку книг</a></p>
+      <p id="status" role="status" hidden></p>
+      <article id="book">
+        <div class="book-overview">
+          <img id="cover" src="../javascript_the_definitive_guide.jpg" alt="" width="240">
+          <section aria-labelledby="title">
+            <h1 id="title">JavaScript. Вичерпний посібник, 7-ме видання</h1>
+            <p id="author">Девід Фленаган</p>
+            <p>Рівень: <span id="level"></span></p>
+            <p>Теги: <span id="tags"></span></p>
+            <p id="summary"></p>
+          </section>
+          <form id="order" class="order">
+            <p><strong>Ціна</strong> <span id="price">10,99 $</span></p>
+            <div class="quantity">
+              <label for="count">Кількість</label>
+              <div class="stepper">
+                <button type="button" id="minus" aria-label="Зменшити кількість" disabled>−</button>
+                <input id="count" type="number" min="1" max="42" step="1" value="1" required>
+                <button type="button" id="plus" aria-label="Збільшити кількість">+</button>
+              </div>
+            </div>
+            <p><strong>Загальна вартість</strong> <output for="count" id="total">10,99 $</output></p>
+            <button id="add" type="submit" disabled>Додати до кошика</button>
+            <output id="added" aria-live="polite"></output>
+            <a id="open-cart" href="../cart/" hidden>Перейти до кошика</a>
+          </form>
+        </div>
+        <section aria-labelledby="description-title">
+          <h2 id="description-title">Опис книги</h2>
+          <p id="description">Довідник із JavaScript.</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

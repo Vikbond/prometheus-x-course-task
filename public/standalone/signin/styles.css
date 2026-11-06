@@ -1,0 +1,14 @@
+@import url("../standalone.css");
+
+main { margin-top: clamp(44px, 9vh, 96px); }
+form { display: grid; justify-items: center; gap: 12px; }
+form img { width: 160px; height: 160px; margin-bottom: 12px; }
+label { font-weight: 700; }
+input, button { width: 200px; }
+input { text-align: center; }
+
+@media (max-width: 320px) {
+  main { padding-inline: 8px; }
+  form img { width: 200px; height: 200px; }
+  input, button { width: 100%; }
+}

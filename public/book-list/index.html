@@ -1,63 +1,7 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book list | X-course task</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="container navbar-inner">
-        <a class="navbar-brand" href="index.html">X-course task / Your full name</a>
-        <ul class="navbar-nav">
-          <li>
-            <a class="cart-link" href="#cart" aria-label="Cart">
-              <img src="assets/cart.svg" width="38" height="38" alt="">
-            </a>
-          </li>
-          <li>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Sign-Out</button>
-          </li>
-          <li>
-            <a class="user-avatar" href="#signin">
-              <span class="user-avatar-img"><img src="assets/avatar.png" alt=""></span>
-              <span class="user-avatar-text">TestUser</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <main class="wrapper">
-      <div class="container">
-        <div class="row filters">
-          <div class="col-search">
-            <form id="search-form" class="search" role="search">
-              <input id="search_book" class="form-control" type="text" placeholder="Search book by book name" aria-label="Search book by book name" autocomplete="off">
-              <button id="submit_search" class="search-button" type="submit" aria-label="Search">
-                <img src="assets/searchIcon.svg" alt="">
-              </button>
-            </form>
-          </div>
-          <div class="col-price">
-            <select id="price-filter" class="form-select" aria-label="Filter by price">
-              <option value="0-">Any Price</option>
-              <option value="0-15">up to $15</option>
-              <option value="15-30">$15 - $30</option>
-              <option value="30-">$30+</option>
-            </select>
-          </div>
-        </div>
-
-        <p id="catalog-status" class="catalog-status" role="status" aria-live="polite">Loading books…</p>
-        <div id="books_list_wrapper" class="row books-grid"></div>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <a href="https://prometheus.org.ua/" target="_blank" rel="noopener">Виконано в Prometheus © 2023</a>
-    </footer>
-  </body>
+<html lang="uk">
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=../standalone/book-list/">
+  <title>Список книг</title>
+  <p><a href="../standalone/book-list/">Перейти до списку книг</a></p>
 </html>

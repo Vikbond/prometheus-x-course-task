@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кошик | Курсовий проєкт</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="store-header">Курсовий проєкт <a href="../book-list/">До каталогу</a></header>
+    <main>
+      <div class="cart-heading">
+        <h1>Кошик</h1>
+        <button id="purchase" type="button" disabled>Придбати</button>
+      </div>
+      <p id="status" role="status">Завантаження кошика…</p>
+      <section id="empty" hidden>
+        <img src="../cart.svg" alt="" width="96" height="96">
+        <h2>Кошик порожній</h2>
+      </section>
+      <table id="lines" aria-label="Книги в кошику" hidden>
+        <thead>
+          <tr><th scope="col">Книга</th><th scope="col">Кількість</th><th scope="col">Ціна за примірник</th><th scope="col">Сума</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="summary" hidden>Загальна сума <strong id="total"></strong></p>
+    </main>
+  </body>
+</html>

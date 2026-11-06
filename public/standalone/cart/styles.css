@@ -1,0 +1,12 @@
+@import url("../standalone.css");
+
+.cart-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+#status:empty { display: none; }
+#empty { padding-block: 60px; text-align: center; }
+table { width: 100%; border-collapse: collapse; text-align: left; background: #fffdf8; }
+th, td { padding: 12px; border-bottom: 1px solid #cccfc2; }
+td:first-child { overflow-wrap: anywhere; }
+td:not(:first-child) { text-align: right; white-space: nowrap; }
+th:not(:first-child) { text-align: right; }
+#summary { text-align: right; }
+@media (max-width: 480px) { th, td { padding: 8px 5px; font-size: 0.86rem; } }

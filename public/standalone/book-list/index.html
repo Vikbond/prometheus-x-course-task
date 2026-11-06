@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список книг | Курсовий проєкт</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="store-header">
+      Курсовий проєкт
+      <a href="../cart/"><img src="../cart.svg" alt="" width="24" height="24">Кошик</a>
+    </header>
+    <main>
+      <h1>Список книг</h1>
+      <p id="status" role="status">Завантаження книг…</p>
+      <section id="catalog" aria-label="Каталог книг"></section>
+      <template id="book-card">
+        <article class="book-card">
+          <a class="card-link">
+            <img alt="">
+            <h2></h2>
+            <p></p>
+            <div class="card-actions"><strong></strong><span class="button">Переглянути</span></div>
+          </a>
+        </article>
+      </template>
+    </main>
+  </body>
+</html>
